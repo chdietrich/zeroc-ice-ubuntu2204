@@ -1,9 +1,9 @@
-Ubuntu 20.04 Zeroc Ice Builder
+Ubuntu 22.04 Zeroc Ice Builder
 ==============================
 
 [![Actions Status](https://github.com/ome/zeroc-ice-ubuntu2004/workflows/Build/badge.svg)](https://github.com/ome/zeroc-ice-ubuntu2004/actions)
 
-Builds Zeroc Ice for Ubuntu 20.04.
+Builds Zeroc Ice for Ubuntu 22.04.
 Ice 3.6 is built from source and a wheel is also created.
 
 This can be used to create installable binary packages as an alternative to compiling from source using pip.
@@ -23,7 +23,7 @@ Installing the binaries
 
 ```
 cd /opt
-tar -zxf ice-3.6.5-${RELEASE}-ubuntu2004-amd64.tar.gz
+tar -zxf ice-3.6.5-${RELEASE}-ubuntu2204-amd64.tar.gz
 ```
 These binaries are compiled with a prefix of `/opt/ice-3.6.5-${RELEASE}`.
 It may be possible to relocate them but this is untested.
