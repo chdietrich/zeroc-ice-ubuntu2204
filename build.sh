@@ -10,8 +10,7 @@ TARGET_NAME=ice-$ICE_VERSION-$BUILD
 export MAKEFLAGS="-j$(nproc)"
 
 # Build Ice cpp from source
-wget -q https://github.com/zeroc-ice/ice/archive/v$ICE_VERSION.tar.gz
-tar xzf v$ICE_VERSION.tar.gz
+wget -qO- https://github.com/zeroc-ice/ice/archive/v$ICE_VERSION.tar.gz | tar xz
 cd ice-$ICE_VERSION/cpp
 
 CXXFLAGS=-Wno-error make --silent prefix=/opt/$TARGET_NAME
