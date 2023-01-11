@@ -1,5 +1,4 @@
 FROM ubuntu:22.04
-MAINTAINER ome-devel@lists.openmicroscopy.org.uk
 
 ENV TZ=Europe/London
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
@@ -12,7 +11,7 @@ RUN apt-get update && \
         build-essential \
         ca-certificates \
         libbz2-dev \
-        libdb++-dev 
+        libdb++-dev \
         libexpat-dev \
         libmcpp-dev \
         libssl-dev \
