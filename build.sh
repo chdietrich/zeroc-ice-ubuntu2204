@@ -13,7 +13,7 @@ export MAKEFLAGS="-j$(nproc)"
 wget -qO- https://github.com/zeroc-ice/ice/archive/v$ICE_VERSION.tar.gz | tar xz
 cd ice-$ICE_VERSION/cpp
 
-CXXFLAGS=-Wno-error make --silent prefix=/opt/$TARGET_NAME
+CXXFLAGS="-Wno-error=deprecated-declarations -Wno-error=sign-compare -Wno-error=unused-result -Wno-error=register" make --silent prefix=/opt/$TARGET_NAME
 make install --silent prefix=/opt/$TARGET_NAME
 
 tar -zcf /dist/$TARGET_NAME-ubuntu2204-amd64.tar.gz -C /opt $TARGET_NAME
