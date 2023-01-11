@@ -1,8 +1,6 @@
 Ubuntu 22.04 Zeroc Ice Builder
 ==============================
 
-[![Actions Status](https://github.com/ome/zeroc-ice-ubuntu2004/workflows/Build/badge.svg)](https://github.com/ome/zeroc-ice-ubuntu2004/actions)
-
 Builds Zeroc Ice for Ubuntu 22.04.
 Ice 3.6 is built from source and a wheel is also created.
 
