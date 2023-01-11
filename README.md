@@ -1,4 +1,4 @@
-Ubuntu 22.04 Zeroc Ice Builder
+Ubuntu 22.04 Zeroc Ice Builder (unofficial fork!)
 ==============================
 
 Builds Zeroc Ice for Ubuntu 22.04.
