@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 MAINTAINER ome-devel@lists.openmicroscopy.org.uk
 
 ENV TZ=Europe/London
@@ -8,24 +8,17 @@ RUN echo 'APT::Install-Recommends 0;' > /etc/apt/apt.conf.d/01norecommends \
  && echo 'APT::Install-Suggests 0;' >> /etc/apt/apt.conf.d/01norecommends
 
 RUN apt-get update && \
-    apt-get install -y -q\
-        unzip \
-        wget \
+    apt-get install -y -q \
         build-essential \
-        db5.3-util \
+        ca-certificates \
         libbz2-dev \
-        libdb++-dev \
-        libdb-dev \
+        libdb++-dev 
         libexpat-dev \
         libmcpp-dev \
         libssl-dev \
-        mcpp \
-        python3-dev \
+        python-dev \
         python3-pip \
-        python3-setuptools \
-        python3-wheel \
-        software-properties-common \
-        zlib1g-dev
+        wget
 
 RUN mkdir /dist
 ADD build.sh /
